@@ -19,6 +19,26 @@ body {
     padding: 32px 16px;
 }   
 
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+}
+    
 .profile-card,
 .section-card {
     background-color: #ffffff;
@@ -47,12 +67,54 @@ body {
     justify-content: center;
     color: #f9fafb;
     font-size: 32px;
-}   
+} 
+
+.profile-right h2 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.profile-role {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.profile-summary {
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
 .info-gird {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px 16px;
-}   
+} 
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.info-label {
+    color: #9ca3af;
+    margin-bottom: 2px;
+}
+
+.info-value {
+    font-weight: 500;
+}
+
+.section-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.section-card p {
+    font-size: 14px;
+    color: #374151;
+}
 
 .tag-list {
     list-style: none;
@@ -73,4 +135,20 @@ body {
     text-align: center;
     color: #9ca3af;
 }
+
+@media (max-width: 640px) {
+    .profile-card {
+        grid-template-columns: lfr;
+        text-align: left;
+    }
+
+    .profile-card {
+        padding: 20px 16px 18px;
+    }
+
+    .section-card {
+        padding: 20px 16px 18px;
+    }
+}
+
 
